@@ -31,7 +31,7 @@ ARGF.each_line do |line|
     @current_entry = Entry.new(nil, nil, [])
     @current_day.entries << @current_entry
     @current_entry.process_time_line line
-
+    
   elsif @current_entry
     @current_entry.lines << line
   end
