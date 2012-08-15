@@ -13,7 +13,7 @@ include Input
 @current_day   = nil
 
 ARGF.each_line do |line|
-  line = process_line(line)
+  #line = process_line(line)
 
   if line =~ /^(#{ Day::DAYS }) (\d+) (#{ Day::MONTHS }) (#{ Day::YEARS })\r\n$/
     @current_entry = Entry.new(nil, nil, [])

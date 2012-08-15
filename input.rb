@@ -3,7 +3,7 @@ module Input
   
   def read_and_process_line(line)
     line = ARGF.readline
-    Input.process_line(line)
+    #Input.process_line(line)
   end
   
   def process_line(line)
